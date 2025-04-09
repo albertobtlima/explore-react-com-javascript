@@ -7,8 +7,8 @@ function App() {
   const times = [
     {
       nome: "Programação",
-      corPrimaria: "#57c278",
-      corSecundaria: "#d9f7e9",
+      corPrimaria: "#57C278",
+      corSecundaria: "#D9F7E9",
     },
     {
       nome: "Front-End",
@@ -31,7 +31,7 @@ function App() {
       corSecundaria: "#FAE9F5",
     },
     {
-      nome: "mobile",
+      nome: "Mobile",
       corPrimaria: "#FFBA05",
       corSecundaria: "#FFF5D9",
     },
