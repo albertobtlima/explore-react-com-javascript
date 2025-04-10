@@ -1,5 +1,6 @@
-import Colaborador from "../Colaborador";
 import "./time.css";
+import Colaborador from "../Colaborador";
+import hexToRgba from "hex-to-rgba";
 
 const Time = ({ time, colaboradores, aoDeletar, mudarCor }) => {
   return (
@@ -8,31 +9,31 @@ const Time = ({ time, colaboradores, aoDeletar, mudarCor }) => {
         className="time"
         style={{
           backgroundImage: "url(/imagens/fundo.png)",
-          backgroundColor: time.corPrimaria,
+          backgroundColor: hexToRgba(time.cor, "0.6"),
         }}
       >
         <input
-          value={time.corSecundaria}
+          value={time.cor}
           type="color"
           className="input-cor"
           onChange={(evento) => mudarCor(evento.target.value, time.nome)}
         />
-        <h3 style={{ borderColor: time.corSecundaria }}>{time.nome}</h3>
+        <h3 style={{ borderColor: time.cor }}>{time.nome}</h3>
         <div className="colaboradores">
           {colaboradores.map((colaborador, indice) => {
-            console.log(
-              <Colaborador
-                key={indice}
-                colaborador={colaborador}
-                corDeFundo={time.corSecundaria}
-                aoDeletar={aoDeletar}
-              />
-            );
+            // console.log(
+            //   <Colaborador
+            //     key={indice}
+            //     colaborador={colaborador}
+            //     corDeFundo={time.cor}
+            //     aoDeletar={aoDeletar}
+            //   />
+            // );
             return (
               <Colaborador
                 key={indice}
                 colaborador={colaborador}
-                corDeFundo={time.corSecundaria}
+                corDeFundo={time.cor}
                 aoDeletar={aoDeletar}
               />
             );
