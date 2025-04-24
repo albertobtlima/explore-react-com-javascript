@@ -13,11 +13,15 @@ Planos de estudo com essa formação:
 
 ---
 
+**Projetos do Curso**:
+
+-> [Organo](https://organo-eight-phi.vercel.app/)
+
+---
+
 Lista de Cursos:
 
 ### React: desenvolvendo com JavaScript
-
- -> [Projeto do curso: Organo](https://organo-kohl-five.vercel.app/)
 
 ### React: como os componentes funcionam
 
