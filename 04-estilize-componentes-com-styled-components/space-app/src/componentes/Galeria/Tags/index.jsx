@@ -1,5 +1,12 @@
-import styled from "styled-components";
+import { styled } from "styled-components";
 import tags from "./tags.json";
+
+const TagsContainer = styled.section`
+  display: flex;
+  align-items: center;
+  gap: 64px;
+  margin-top: 56px;
+`;
 
 const TagTitulo = styled.h3`
   color: #d9d9d9;
@@ -22,14 +29,22 @@ const Tag = styled.button`
   }
 `;
 
+const Div = styled.div`
+  display: flex;
+  gap: 24px;
+  justify-content: end;
+`;
+
 const Tags = () => {
   return (
-    <>
+    <TagsContainer>
       <TagTitulo>Busque por tags:</TagTitulo>
-      {tags.map((tag) => (
-        <Tag key={tag.id}>{tag.titulo}</Tag>
-      ))}
-    </>
+      <Div>
+        {tags.map((tag) => (
+          <Tag key={tag.id}>{tag.titulo}</Tag>
+        ))}
+      </Div>
+    </TagsContainer>
   );
 };
 
