@@ -1,3 +1,4 @@
+import React from "react";
 import ItemCarrinhoSuspenso from "@/components/CarrinhoSuspenso/ItemCarrinhoSuspenso";
 import ItemCarrinho from "@/components/ItemCarrinho";
 import { useLocation } from "react-router-dom";
@@ -16,7 +17,6 @@ const ListaProdutosCarrinho = ({ carrinho }) => {
             <ItemCarrinhoSuspenso
               key={itemCarrinho.id}
               itemCarrinho={itemCarrinho}
-              a
             />
           );
         })
