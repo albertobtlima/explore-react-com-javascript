@@ -29,7 +29,7 @@ const Time = (props: TimeProps) => {
       </div>
     </section>
   ) : (
-    ""
+    <></>
   );
 };
 
