@@ -1,6 +1,5 @@
 import { IColaborador } from "../../shared/interfaces/IColaborador";
 import Colaborador from "../Colaborador";
-// import Colaborador from "../Colaborador";
 import "./Time.css";
 
 interface TimeProps {
